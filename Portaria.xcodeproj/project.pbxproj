@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */; };
+		617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */; };
+		617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6E2433FD5B00E37E48 /* ViewController.swift */; };
+		617AAF722433FD5B00E37E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF702433FD5B00E37E48 /* Main.storyboard */; };
+		617AAF742433FD5E00E37E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF732433FD5E00E37E48 /* Assets.xcassets */; };
+		617AAF772433FD5E00E37E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF752433FD5E00E37E48 /* LaunchScreen.storyboard */; };
+		617AAF822433FD5E00E37E48 /* PortariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF812433FD5E00E37E48 /* PortariaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		617AAF7E2433FD5E00E37E48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617AAF5F2433FD5B00E37E48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 617AAF662433FD5B00E37E48;
+			remoteInfo = Portaria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		617AAF672433FD5B00E37E48 /* Portaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		617AAF6E2433FD5B00E37E48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		617AAF712433FD5B00E37E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		617AAF732433FD5E00E37E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		617AAF762433FD5E00E37E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		617AAF782433FD5E00E37E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		617AAF7D2433FD5E00E37E48 /* PortariaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortariaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		617AAF812433FD5E00E37E48 /* PortariaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortariaTests.swift; sourceTree = "<group>"; };
+		617AAF832433FD5E00E37E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		617AAF642433FD5B00E37E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617AAF7A2433FD5E00E37E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		617AAF5E2433FD5B00E37E48 = {
+			isa = PBXGroup;
+			children = (
+				617AAF692433FD5B00E37E48 /* Portaria */,
+				617AAF802433FD5E00E37E48 /* PortariaTests */,
+				617AAF682433FD5B00E37E48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		617AAF682433FD5B00E37E48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				617AAF672433FD5B00E37E48 /* Portaria.app */,
+				617AAF7D2433FD5E00E37E48 /* PortariaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		617AAF692433FD5B00E37E48 /* Portaria */ = {
+			isa = PBXGroup;
+			children = (
+				617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */,
+				617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */,
+				617AAF6E2433FD5B00E37E48 /* ViewController.swift */,
+				617AAF702433FD5B00E37E48 /* Main.storyboard */,
+				617AAF732433FD5E00E37E48 /* Assets.xcassets */,
+				617AAF752433FD5E00E37E48 /* LaunchScreen.storyboard */,
+				617AAF782433FD5E00E37E48 /* Info.plist */,
+			);
+			path = Portaria;
+			sourceTree = "<group>";
+		};
+		617AAF802433FD5E00E37E48 /* PortariaTests */ = {
+			isa = PBXGroup;
+			children = (
+				617AAF812433FD5E00E37E48 /* PortariaTests.swift */,
+				617AAF832433FD5E00E37E48 /* Info.plist */,
+			);
+			path = PortariaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		617AAF662433FD5B00E37E48 /* Portaria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617AAF862433FD5E00E37E48 /* Build configuration list for PBXNativeTarget "Portaria" */;
+			buildPhases = (
+				617AAF632433FD5B00E37E48 /* Sources */,
+				617AAF642433FD5B00E37E48 /* Frameworks */,
+				617AAF652433FD5B00E37E48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Portaria;
+			productName = Portaria;
+			productReference = 617AAF672433FD5B00E37E48 /* Portaria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		617AAF7C2433FD5E00E37E48 /* PortariaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617AAF892433FD5E00E37E48 /* Build configuration list for PBXNativeTarget "PortariaTests" */;
+			buildPhases = (
+				617AAF792433FD5E00E37E48 /* Sources */,
+				617AAF7A2433FD5E00E37E48 /* Frameworks */,
+				617AAF7B2433FD5E00E37E48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				617AAF7F2433FD5E00E37E48 /* PBXTargetDependency */,
+			);
+			name = PortariaTests;
+			productName = PortariaTests;
+			productReference = 617AAF7D2433FD5E00E37E48 /* PortariaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		617AAF5F2433FD5B00E37E48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Marcio Habigzang Brufatto";
+				TargetAttributes = {
+					617AAF662433FD5B00E37E48 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					617AAF7C2433FD5E00E37E48 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 617AAF662433FD5B00E37E48;
+					};
+				};
+			};
+			buildConfigurationList = 617AAF622433FD5B00E37E48 /* Build configuration list for PBXProject "Portaria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 617AAF5E2433FD5B00E37E48;
+			productRefGroup = 617AAF682433FD5B00E37E48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				617AAF662433FD5B00E37E48 /* Portaria */,
+				617AAF7C2433FD5E00E37E48 /* PortariaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		617AAF652433FD5B00E37E48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617AAF772433FD5E00E37E48 /* LaunchScreen.storyboard in Resources */,
+				617AAF742433FD5E00E37E48 /* Assets.xcassets in Resources */,
+				617AAF722433FD5B00E37E48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617AAF7B2433FD5E00E37E48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		617AAF632433FD5B00E37E48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */,
+				617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */,
+				617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617AAF792433FD5E00E37E48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617AAF822433FD5E00E37E48 /* PortariaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		617AAF7F2433FD5E00E37E48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 617AAF662433FD5B00E37E48 /* Portaria */;
+			targetProxy = 617AAF7E2433FD5E00E37E48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		617AAF702433FD5B00E37E48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				617AAF712433FD5B00E37E48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		617AAF752433FD5E00E37E48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				617AAF762433FD5E00E37E48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		617AAF842433FD5E00E37E48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		617AAF852433FD5E00E37E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		617AAF872433FD5E00E37E48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6NR5MWZFA;
+				INFOPLIST_FILE = Portaria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mantratech.Portaria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		617AAF882433FD5E00E37E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6NR5MWZFA;
+				INFOPLIST_FILE = Portaria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mantratech.Portaria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		617AAF8A2433FD5E00E37E48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6NR5MWZFA;
+				INFOPLIST_FILE = PortariaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mantratech.PortariaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portaria.app/Portaria";
+			};
+			name = Debug;
+		};
+		617AAF8B2433FD5E00E37E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6NR5MWZFA;
+				INFOPLIST_FILE = PortariaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.mantratech.PortariaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portaria.app/Portaria";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		617AAF622433FD5B00E37E48 /* Build configuration list for PBXProject "Portaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617AAF842433FD5E00E37E48 /* Debug */,
+				617AAF852433FD5E00E37E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617AAF862433FD5E00E37E48 /* Build configuration list for PBXNativeTarget "Portaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617AAF872433FD5E00E37E48 /* Debug */,
+				617AAF882433FD5E00E37E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617AAF892433FD5E00E37E48 /* Build configuration list for PBXNativeTarget "PortariaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617AAF8A2433FD5E00E37E48 /* Debug */,
+				617AAF8B2433FD5E00E37E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 617AAF5F2433FD5B00E37E48 /* Project object */;
+}

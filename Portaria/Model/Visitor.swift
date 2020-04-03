@@ -8,9 +8,19 @@
 
 import Foundation
 
+enum Category: String {
+    case serviceProvider = "Prestador de Serviço"
+    case privateVisit = "Particular"
+        
+    func value() -> String {
+        return self.rawValue
+    }
+}
+
 struct Visitor {
     let endDateAndHour: Date?
     let name: String
     let phone: String
     let responsibleAccess: String
+    let category: Category
 }

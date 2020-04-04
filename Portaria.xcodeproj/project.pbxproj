@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		614A440C2436C5050010AECD /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440B2436C5050010AECD /* Visitor.swift */; };
+		614A440F2436E6610010AECD /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440E2436E6610010AECD /* Visitor.swift */; };
+		614A44112436E6740010AECD /* VisitorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A44102436E6740010AECD /* VisitorProtocol.swift */; };
 		617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */; };
 		617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */; };
 		617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6E2433FD5B00E37E48 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		614A440B2436C5050010AECD /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		614A440E2436E6610010AECD /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		614A44102436E6740010AECD /* VisitorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorProtocol.swift; sourceTree = "<group>"; };
 		617AAF672433FD5B00E37E48 /* Portaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		614A440D2436E63B0010AECD /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				614A440E2436E6610010AECD /* Visitor.swift */,
+				614A44102436E6740010AECD /* VisitorProtocol.swift */,
+			);
+			path = Bussiness;
+			sourceTree = "<group>";
+		};
 		617AAF5E2433FD5B00E37E48 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 		617AAF692433FD5B00E37E48 /* Portaria */ = {
 			isa = PBXGroup;
 			children = (
+				614A440D2436E63B0010AECD /* Bussiness */,
 				614A440A2436C4C70010AECD /* Model */,
 				617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */,
 				617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */,
@@ -211,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614A44112436E6740010AECD /* VisitorProtocol.swift in Sources */,
 				614A440C2436C5050010AECD /* Visitor.swift in Sources */,
 				617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */,
 				617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */,
+				614A440F2436E6610010AECD /* Visitor.swift in Sources */,
 				617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

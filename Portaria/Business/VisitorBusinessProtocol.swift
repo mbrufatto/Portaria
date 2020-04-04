@@ -7,11 +7,19 @@
 //
 
 import Foundation
+import RealmSwift
 
-protocol VisitorProtocol {
-    func addVisitorInContact(visitor: Visitor)
-    func addVisitorInDatabase(visitor: Visitor)
+protocol VisitorBusinessProtocol {
+    
+    func save(isAddInContacts: Bool, visitor: Visitor)
+    
+    func listVisitorDatabase() -> Results<Visitor>
+    
+    func searchVisitorInContactsByName(visitorName: String)
+    
     func filterByWeek()
+    
     func filterByMonth()
+    
     func filterByYear()
 }

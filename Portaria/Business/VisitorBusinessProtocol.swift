@@ -15,7 +15,13 @@ protocol VisitorBusinessProtocol {
     
     func listVisitorDatabase() -> Results<Visitor>
     
-    func searchVisitorInContactsByName(visitorName: String)
+    func searchVisitorInContactsByName(_ visitorName: String) -> Visitor
+    
+    func searchVisitorInDataBaseByName(_ visitorName: String) -> Visitor
+    
+    func deleteVisitorInDatabase(visitor: Visitor)
+    
+    func deleteVisitorInContacts(_ visitorName: String)
     
     func filterByWeek()
     

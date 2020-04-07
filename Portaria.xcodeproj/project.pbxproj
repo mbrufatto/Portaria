@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		533BC7830BE96A1DC00E1D8E /* Pods_PortariaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5430BB18C17C14FE60A7A5E /* Pods_PortariaTests.framework */; };
+		613A40CA243CB96F00397E1D /* VisitorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A40C9243CB96F00397E1D /* VisitorTest.swift */; };
 		614A440C2436C5050010AECD /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440B2436C5050010AECD /* Visitor.swift */; };
 		614A440F2436E6610010AECD /* VisitorBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440E2436E6610010AECD /* VisitorBusiness.swift */; };
 		614A44112436E6740010AECD /* VisitorBusinessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A44102436E6740010AECD /* VisitorBusinessProtocol.swift */; };
@@ -36,6 +37,7 @@
 		3A814F512C9C0C15237EA948 /* Pods-Portaria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portaria.debug.xcconfig"; path = "Target Support Files/Pods-Portaria/Pods-Portaria.debug.xcconfig"; sourceTree = "<group>"; };
 		43ACB0F9BFAA1F0A1973DF98 /* Pods-PortariaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortariaTests.release.xcconfig"; path = "Target Support Files/Pods-PortariaTests/Pods-PortariaTests.release.xcconfig"; sourceTree = "<group>"; };
 		5C4F232C6A4EDAFFA3068A4B /* Pods-PortariaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortariaTests.debug.xcconfig"; path = "Target Support Files/Pods-PortariaTests/Pods-PortariaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		613A40C9243CB96F00397E1D /* VisitorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTest.swift; sourceTree = "<group>"; };
 		614857895EA4BF12540919A9 /* Pods_Portaria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portaria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		614A440B2436C5050010AECD /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		614A440E2436E6610010AECD /* VisitorBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorBusiness.swift; sourceTree = "<group>"; };
@@ -94,6 +96,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		613A40C5243CB48800397E1D /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				613A40C9243CB96F00397E1D /* VisitorTest.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		613A40CB243CDA2A00397E1D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		614A440A2436C4C70010AECD /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +151,7 @@
 		617AAF692433FD5B00E37E48 /* Portaria */ = {
 			isa = PBXGroup;
 			children = (
+				613A40CB243CDA2A00397E1D /* Resource */,
 				614A440D2436E63B0010AECD /* Business */,
 				614A440A2436C4C70010AECD /* Model */,
 				617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */,
@@ -150,6 +168,7 @@
 		617AAF802433FD5E00E37E48 /* PortariaTests */ = {
 			isa = PBXGroup;
 			children = (
+				613A40C5243CB48800397E1D /* Business */,
 				617AAF812433FD5E00E37E48 /* PortariaTests.swift */,
 				617AAF832433FD5E00E37E48 /* Info.plist */,
 			);
@@ -337,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				613A40CA243CB96F00397E1D /* VisitorTest.swift in Sources */,
 				617AAF822433FD5E00E37E48 /* PortariaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,29 +31,52 @@ class VisitorBusiness: VisitorBusinessProtocol {
         return realm.objects(Visitor.self)
     }
     
-    func searchVisitorInContactsByName(visitorName: String) {
+    func searchVisitorInContactsByName(_ visitorName: String) -> Visitor {
         if !visitorName.isEmpty {
-            let toFetch = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactImageDataAvailableKey]
+            let toFetch = [CNContactGivenNameKey, CNContactPhoneNumbersKey, CNContactJobTitleKey]
             let predicate = CNContact.predicateForContacts(matchingName: visitorName)
             
             do {
-                let contacts = try search.unifiedContacts(matching: predicate, keysToFetch: toFetch as [CNKeyDescriptor])
-                
-                for contact in contacts {
-                    let Dictionary = NSMutableDictionary()
-                    
-                    let name = contact.givenName
-                    let familyname = contact.familyName
-                    Dictionary.setValue(name, forKey: "givenName")
-                    Dictionary.setValue(familyname, forKey: "familyName")
-                    
-                    //TODO retornar o visitante (visitor)
+            
+                guard let contact = try search.unifiedContacts(matching: predicate, keysToFetch: toFetch as [CNKeyDescriptor]).first else {
+                    return Visitor()
                 }
+                let visitor = Visitor()
+                visitor.name = contact.givenName
+                visitor.phone = contact.phoneNumbers.first?.value.stringValue
+                visitor.category = contact.jobTitle == "Prestador de Serviço" ? .serviceProvider : .privateVisit
+                
+                return visitor
+                
             } catch let err {
                 print(err)
+                return Visitor()
             }
         } else {
             print("Precisa passar o nome do visitante")
+            return Visitor()
+        }
+    }
+    
+    func searchVisitorInDataBaseByName(_ visitorName: String) -> Visitor {
+        let realm = try! Realm()
+        return realm.objects(Visitor.self).filter("name = %@", visitorName).first!
+    }
+    
+    func deleteVisitorInDatabase(visitor: Visitor) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.delete(visitor)
+        }
+    }
+    
+    func deleteVisitorInContacts(_ visitorName: String) {
+        let contact = self.searchVisitorInContacts(visitorName).mutableCopy() as! CNMutableContact
+        self.requestSave.delete(contact)
+        do {
+            try self.search.execute(self.requestSave)
+        } catch {
+            print(error)
         }
     }
 
@@ -69,6 +92,29 @@ class VisitorBusiness: VisitorBusinessProtocol {
         
     }
     
+    private func searchVisitorInContacts(_ visitorName: String) -> CNContact {
+        if !visitorName.isEmpty {
+            let toFetch = [CNContactGivenNameKey, CNContactPhoneNumbersKey, CNContactJobTitleKey]
+            let predicate = CNContact.predicateForContacts(matchingName: visitorName)
+            
+            do {
+                
+                guard let contact = try search.unifiedContacts(matching: predicate, keysToFetch: toFetch as [CNKeyDescriptor]).first else {
+                    return CNContact()
+                }
+                
+                return contact
+                
+            } catch let err {
+                print(err)
+                return CNContact()
+            }
+        } else {
+            print("Precisa passar o nome do visitante")
+            return CNContact()
+        }
+    }
+    
     private func addVisitorInContact(_ visitor: Visitor) {
         
         let requestSave = CNSaveRequest()
@@ -76,7 +122,7 @@ class VisitorBusiness: VisitorBusinessProtocol {
         
         newContact.givenName = visitor.name
         newContact.phoneNumbers = [CNLabeledValue(label: "Mobile", value: CNPhoneNumber(stringValue: visitor.phone))]
-        newContact.note = visitor.category.value()
+        newContact.jobTitle = visitor.category.value()
         
         requestSave.add(newContact, toContainerWithIdentifier: nil)
         
@@ -88,9 +134,7 @@ class VisitorBusiness: VisitorBusinessProtocol {
     }
     
     private func addVisitorInDatabase(_ visitor: Visitor) {
-        
         let realm = try! Realm()
-
         try! realm.write {
             realm.add(visitor)
         }

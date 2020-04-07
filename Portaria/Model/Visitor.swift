@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 enum Category: String {
     case serviceProvider = "Prestador de Serviço"
@@ -17,10 +18,11 @@ enum Category: String {
     }
 }
 
-struct Visitor {
-    let endDateAndHour: Date?
-    let name: String
-    let phone: String
-    let responsibleAccess: String
-    let category: Category
+class Visitor: Object {
+    @objc dynamic var startDateAndHour: Date! = Date()
+    @objc dynamic var endDateAndHour: Date? = nil
+    @objc dynamic var name: String! = ""
+    @objc dynamic var phone: String! = ""
+    @objc dynamic var responsibleAccess: String! = ""
+    dynamic var category: Category!
 }

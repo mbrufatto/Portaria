@@ -30,6 +30,9 @@ class VisitorTest: XCTestCase {
         let visitorDatabase = visitorBusiness.searchVisitorInDataBaseByName(visitor.name)
         XCTAssertEqual(visitorDatabase.name, visitor.name)
         
+        let contact = visitorBusiness.searchVisitorInContactsByName(visitor.name)
+        XCTAssertEqual(contact.name, "")
+        
         visitorBusiness.deleteVisitorInDatabase(visitor: visitor)
     }
     

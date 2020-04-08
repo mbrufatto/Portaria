@@ -6,6 +6,10 @@ Para este projeto foi utilizado o Cocoapods, para gerenciar as bibliotecas utili
 
 Realm.io - para gerenciar o banco de dados;
 
-# Objetivo do Aplicativo
+## Objetivo do Aplicativo
 
 O aplicativo tem como objetivo de gerenciar a entrada e saída de visitantes de uma portaria.
+
+## Funcionalidades implementas
+
+- Listagem de Visitantes, quando o visitante não teve a saída registrada, o nome e a categoria ficam em vermelhos, caso contrário fica preto;

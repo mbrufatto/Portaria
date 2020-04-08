@@ -9,21 +9,30 @@
 import Foundation
 import RealmSwift
 
-class VisitorViewModel {
+class VisitorListViewModel {
     
     private var visitorBusinessProtocol: VisitorBusinessProtocol
     
+    private var visitors: Results<Visitor>!
+
     init(visitorBusinessProtocol: VisitorBusinessProtocol) {
         self.visitorBusinessProtocol = visitorBusinessProtocol
-    }
-    
-    func listAllVisitor() -> Results<Visitor> {
-        return self.visitorBusinessProtocol.listVisitorDatabase()
+        self.visitors = self.visitorBusinessProtocol.listVisitorDatabase()
     }
     
     func saveVisitor(_ isAddInContacts: Bool, visitor: Visitor) {
         self.visitorBusinessProtocol.save(isAddInContacts: isAddInContacts, visitor: visitor)
     }
     
-    //TODO add Filters
+    func numberOfVisitors() -> Int {
+        return self.visitors.count
+    }
+    
+    func visitorAt(index: Int) -> Visitor {
+        return self.visitors[index]
+    }
 }
+
+
+
+

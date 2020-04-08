@@ -44,7 +44,7 @@ class VisitorBusiness: VisitorBusinessProtocol {
                 let visitor = Visitor()
                 visitor.name = contact.givenName
                 visitor.phone = contact.phoneNumbers.first?.value.stringValue
-                visitor.category = contact.jobTitle == "Prestador de Serviço" ? .serviceProvider : .privateVisit
+                visitor.category = contact.jobTitle == "Prestador de Serviço" ? "Prestador de Serviço" : "Particular"
                 
                 return visitor
                 
@@ -124,7 +124,7 @@ class VisitorBusiness: VisitorBusinessProtocol {
         
         newContact.givenName = visitor.name
         newContact.phoneNumbers = [CNLabeledValue(label: "Mobile", value: CNPhoneNumber(stringValue: visitor.phone))]
-        newContact.jobTitle = visitor.category.value()
+        newContact.jobTitle = visitor.category
         
         requestSave.add(newContact, toContainerWithIdentifier: nil)
         
@@ -147,8 +147,7 @@ class VisitorBusiness: VisitorBusinessProtocol {
         guard let _ = visitor.startDateAndHour,
             let _ = visitor.name,
             let _ = visitor.phone,
-            let _ = visitor.responsibleAccess,
-            let _ = visitor.category else {
+            let _ = visitor.responsibleAccess else {
                 return false
         }
         return true

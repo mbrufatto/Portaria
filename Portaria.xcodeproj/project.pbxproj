@@ -10,12 +10,12 @@
 		533BC7830BE96A1DC00E1D8E /* Pods_PortariaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5430BB18C17C14FE60A7A5E /* Pods_PortariaTests.framework */; };
 		613A40CA243CB96F00397E1D /* VisitorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A40C9243CB96F00397E1D /* VisitorTest.swift */; };
 		613A40CF243CFF4D00397E1D /* VisitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A40CE243CFF4D00397E1D /* VisitorViewModel.swift */; };
+		613A40D2243D723D00397E1D /* ListVisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A40D1243D723D00397E1D /* ListVisitorViewController.swift */; };
 		614A440C2436C5050010AECD /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440B2436C5050010AECD /* Visitor.swift */; };
 		614A440F2436E6610010AECD /* VisitorBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440E2436E6610010AECD /* VisitorBusiness.swift */; };
 		614A44112436E6740010AECD /* VisitorBusinessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A44102436E6740010AECD /* VisitorBusinessProtocol.swift */; };
 		617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */; };
 		617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */; };
-		617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6E2433FD5B00E37E48 /* ViewController.swift */; };
 		617AAF722433FD5B00E37E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF702433FD5B00E37E48 /* Main.storyboard */; };
 		617AAF742433FD5E00E37E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF732433FD5E00E37E48 /* Assets.xcassets */; };
 		617AAF772433FD5E00E37E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF752433FD5E00E37E48 /* LaunchScreen.storyboard */; };
@@ -40,6 +40,7 @@
 		5C4F232C6A4EDAFFA3068A4B /* Pods-PortariaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortariaTests.debug.xcconfig"; path = "Target Support Files/Pods-PortariaTests/Pods-PortariaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		613A40C9243CB96F00397E1D /* VisitorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTest.swift; sourceTree = "<group>"; };
 		613A40CE243CFF4D00397E1D /* VisitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewModel.swift; sourceTree = "<group>"; };
+		613A40D1243D723D00397E1D /* ListVisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVisitorViewController.swift; sourceTree = "<group>"; };
 		614857895EA4BF12540919A9 /* Pods_Portaria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portaria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		614A440B2436C5050010AECD /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		614A440E2436E6610010AECD /* VisitorBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorBusiness.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		617AAF672433FD5B00E37E48 /* Portaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		617AAF6E2433FD5B00E37E48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		617AAF712433FD5B00E37E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		617AAF732433FD5E00E37E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		617AAF762433FD5E00E37E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,6 +114,14 @@
 			path = PortariaViewModel;
 			sourceTree = "<group>";
 		};
+		613A40D0243D6FBA00397E1D /* PortariaView */ = {
+			isa = PBXGroup;
+			children = (
+				613A40D1243D723D00397E1D /* ListVisitorViewController.swift */,
+			);
+			path = PortariaView;
+			sourceTree = "<group>";
+		};
 		614A440A2436C4C70010AECD /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,12 +162,12 @@
 		617AAF692433FD5B00E37E48 /* Portaria */ = {
 			isa = PBXGroup;
 			children = (
+				613A40D0243D6FBA00397E1D /* PortariaView */,
 				613A40CD243CFE2200397E1D /* PortariaViewModel */,
 				614A440D2436E63B0010AECD /* Business */,
 				614A440A2436C4C70010AECD /* Model */,
 				617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */,
 				617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */,
-				617AAF6E2433FD5B00E37E48 /* ViewController.swift */,
 				617AAF702433FD5B00E37E48 /* Main.storyboard */,
 				617AAF732433FD5E00E37E48 /* Assets.xcassets */,
 				617AAF752433FD5E00E37E48 /* LaunchScreen.storyboard */,
@@ -349,8 +357,8 @@
 				614A44112436E6740010AECD /* VisitorBusinessProtocol.swift in Sources */,
 				613A40CF243CFF4D00397E1D /* VisitorViewModel.swift in Sources */,
 				614A440C2436C5050010AECD /* Visitor.swift in Sources */,
-				617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */,
 				617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */,
+				613A40D2243D723D00397E1D /* ListVisitorViewController.swift in Sources */,
 				614A440F2436E6610010AECD /* VisitorBusiness.swift in Sources */,
 				617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */,
 			);

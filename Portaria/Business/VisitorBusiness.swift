@@ -92,6 +92,8 @@ class VisitorBusiness: VisitorBusinessProtocol {
         
     }
     
+    //TODO exportar lista de visitantes
+    
     private func searchVisitorInContacts(_ visitorName: String) -> CNContact {
         if !visitorName.isEmpty {
             let toFetch = [CNContactGivenNameKey, CNContactPhoneNumbersKey, CNContactJobTitleKey]

@@ -22,6 +22,7 @@ class VisitorListViewModel {
     
     func saveVisitor(_ isAddInContacts: Bool, visitor: Visitor) {
         self.visitorBusinessProtocol.save(isAddInContacts: isAddInContacts, visitor: visitor)
+        self.visitors = self.visitorBusinessProtocol.listVisitorDatabase()
     }
     
     func numberOfVisitors() -> Int {
@@ -30,6 +31,10 @@ class VisitorListViewModel {
     
     func visitorAt(index: Int) -> Visitor {
         return self.visitors[index]
+    }
+    
+    func filterVisitors(startDate: Date, endDate: Date) {
+        self.visitors = self.visitorBusinessProtocol.filterVisitors(startDate: startDate, endDate: endDate)
     }
 }
 

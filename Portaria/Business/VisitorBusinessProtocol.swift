@@ -23,9 +23,5 @@ protocol VisitorBusinessProtocol {
     
     func deleteVisitorInContacts(_ visitorName: String)
     
-    func filterByWeek()
-    
-    func filterByMonth()
-    
-    func filterByYear()
+    func filterVisitors(startDate: Date, endDate: Date) -> Results<Visitor>
 }

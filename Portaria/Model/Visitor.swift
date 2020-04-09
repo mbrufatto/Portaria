@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class Visitor: Object {
+class Visitor: Object, Codable {
     @objc dynamic var startDateAndHour: Date! = Date()
     @objc dynamic var endDateAndHour: Date? = nil
     @objc dynamic var name: String! = ""

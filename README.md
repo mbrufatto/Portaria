@@ -38,7 +38,7 @@ Na tela de cadastro do visitante o operador pode optar por registrar o visitante
 
 - Tela de Login, sem a parte do servidor. Issue aberta - Login #3;
 
-- Filtrar visitas por semana, mês ou ano;
+- Filtrar visitas por semana, mês ou ano. Issue aberta para melhorar o filtro - Filtro por período #16;
 
 ## Teste
 

@@ -79,20 +79,11 @@ class VisitorBusiness: VisitorBusinessProtocol {
             print(error)
         }
     }
-
-    func filterByWeek(){
-        
-    }
     
-    func filterByMonth() {
-        
+    func filterVisitors(startDate: Date, endDate: Date) -> Results<Visitor> {
+        let realm = try! Realm()
+        return realm.objects(Visitor.self).filter("startDateAndHour BETWEEN {%@, %@}", startDate, endDate)
     }
-    
-    func filterByYear() {
-        
-    }
-    
-    //TODO exportar lista de visitantes
     
     private func searchVisitorInContacts(_ visitorName: String) -> CNContact {
         if !visitorName.isEmpty {

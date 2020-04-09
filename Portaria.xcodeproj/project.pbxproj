@@ -3,17 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533BC7830BE96A1DC00E1D8E /* Pods_PortariaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5430BB18C17C14FE60A7A5E /* Pods_PortariaTests.framework */; };
+		613A40CA243CB96F00397E1D /* VisitorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A40C9243CB96F00397E1D /* VisitorTest.swift */; };
+		613A40CF243CFF4D00397E1D /* VisitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A40CE243CFF4D00397E1D /* VisitorViewModel.swift */; };
+		613A40D2243D723D00397E1D /* ListVisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613A40D1243D723D00397E1D /* ListVisitorViewController.swift */; };
+		6140DF18243E119B0046D95F /* AddVisitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6140DF17243E119B0046D95F /* AddVisitorViewController.swift */; };
+		614A440C2436C5050010AECD /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440B2436C5050010AECD /* Visitor.swift */; };
+		614A440F2436E6610010AECD /* VisitorBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A440E2436E6610010AECD /* VisitorBusiness.swift */; };
+		614A44112436E6740010AECD /* VisitorBusinessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A44102436E6740010AECD /* VisitorBusinessProtocol.swift */; };
 		617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */; };
 		617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */; };
-		617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF6E2433FD5B00E37E48 /* ViewController.swift */; };
 		617AAF722433FD5B00E37E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF702433FD5B00E37E48 /* Main.storyboard */; };
 		617AAF742433FD5E00E37E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF732433FD5E00E37E48 /* Assets.xcassets */; };
 		617AAF772433FD5E00E37E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617AAF752433FD5E00E37E48 /* LaunchScreen.storyboard */; };
-		617AAF822433FD5E00E37E48 /* PortariaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617AAF812433FD5E00E37E48 /* PortariaTests.swift */; };
+		61B7E704243E28BD00428E16 /* AddVisitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7E703243E28BD00428E16 /* AddVisitorViewModel.swift */; };
+		61B7E707243E322000428E16 /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7E706243E322000428E16 /* AuthProtocol.swift */; };
+		61B7E709243E323100428E16 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7E708243E323100428E16 /* Auth.swift */; };
+		61B7E70D243E33B700428E16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7E70C243E33B700428E16 /* LoginViewController.swift */; };
+		61B7E70F243E7DF800428E16 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7E70E243E7DF800428E16 /* FilterViewController.swift */; };
+		61B7E713243E8C4000428E16 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7E712243E8C4000428E16 /* DateExtension.swift */; };
+		61B7E715243E8D9300428E16 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B7E714243E8D9300428E16 /* StringExtension.swift */; };
+		A348A0FD0C5316135393EC75 /* Pods_Portaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614857895EA4BF12540919A9 /* Pods_Portaria.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +41,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0175E9083B7E18DBCCFC69 /* Pods-Portaria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portaria.release.xcconfig"; path = "Target Support Files/Pods-Portaria/Pods-Portaria.release.xcconfig"; sourceTree = "<group>"; };
+		3A814F512C9C0C15237EA948 /* Pods-Portaria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portaria.debug.xcconfig"; path = "Target Support Files/Pods-Portaria/Pods-Portaria.debug.xcconfig"; sourceTree = "<group>"; };
+		43ACB0F9BFAA1F0A1973DF98 /* Pods-PortariaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortariaTests.release.xcconfig"; path = "Target Support Files/Pods-PortariaTests/Pods-PortariaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C4F232C6A4EDAFFA3068A4B /* Pods-PortariaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortariaTests.debug.xcconfig"; path = "Target Support Files/Pods-PortariaTests/Pods-PortariaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		613A40C9243CB96F00397E1D /* VisitorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTest.swift; sourceTree = "<group>"; };
+		613A40CE243CFF4D00397E1D /* VisitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewModel.swift; sourceTree = "<group>"; };
+		613A40D1243D723D00397E1D /* ListVisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVisitorViewController.swift; sourceTree = "<group>"; };
+		6140DF17243E119B0046D95F /* AddVisitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVisitorViewController.swift; sourceTree = "<group>"; };
+		614857895EA4BF12540919A9 /* Pods_Portaria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portaria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614A440B2436C5050010AECD /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		614A440E2436E6610010AECD /* VisitorBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorBusiness.swift; sourceTree = "<group>"; };
+		614A44102436E6740010AECD /* VisitorBusinessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorBusinessProtocol.swift; sourceTree = "<group>"; };
 		617AAF672433FD5B00E37E48 /* Portaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		617AAF6E2433FD5B00E37E48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		617AAF712433FD5B00E37E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		617AAF732433FD5E00E37E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		617AAF762433FD5E00E37E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		617AAF782433FD5E00E37E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		617AAF7D2433FD5E00E37E48 /* PortariaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortariaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		617AAF812433FD5E00E37E48 /* PortariaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortariaTests.swift; sourceTree = "<group>"; };
 		617AAF832433FD5E00E37E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B7E703243E28BD00428E16 /* AddVisitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVisitorViewModel.swift; sourceTree = "<group>"; };
+		61B7E706243E322000428E16 /* AuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
+		61B7E708243E323100428E16 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		61B7E70C243E33B700428E16 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		61B7E70E243E7DF800428E16 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		61B7E712243E8C4000428E16 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		61B7E714243E8D9300428E16 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C5430BB18C17C14FE60A7A5E /* Pods_PortariaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortariaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A348A0FD0C5316135393EC75 /* Pods_Portaria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +85,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533BC7830BE96A1DC00E1D8E /* Pods_PortariaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F25A585B628F0D69DB1F318 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A814F512C9C0C15237EA948 /* Pods-Portaria.debug.xcconfig */,
+				1E0175E9083B7E18DBCCFC69 /* Pods-Portaria.release.xcconfig */,
+				5C4F232C6A4EDAFFA3068A4B /* Pods-PortariaTests.debug.xcconfig */,
+				43ACB0F9BFAA1F0A1973DF98 /* Pods-PortariaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		107E33FF9AF75C65E7293423 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				614857895EA4BF12540919A9 /* Pods_Portaria.framework */,
+				C5430BB18C17C14FE60A7A5E /* Pods_PortariaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		613A40C5243CB48800397E1D /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				613A40C9243CB96F00397E1D /* VisitorTest.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		613A40CD243CFE2200397E1D /* PortariaViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				613A40CE243CFF4D00397E1D /* VisitorViewModel.swift */,
+				61B7E703243E28BD00428E16 /* AddVisitorViewModel.swift */,
+			);
+			path = PortariaViewModel;
+			sourceTree = "<group>";
+		};
+		613A40D0243D6FBA00397E1D /* PortariaView */ = {
+			isa = PBXGroup;
+			children = (
+				613A40D1243D723D00397E1D /* ListVisitorViewController.swift */,
+				6140DF17243E119B0046D95F /* AddVisitorViewController.swift */,
+				61B7E70C243E33B700428E16 /* LoginViewController.swift */,
+				61B7E70E243E7DF800428E16 /* FilterViewController.swift */,
+			);
+			path = PortariaView;
+			sourceTree = "<group>";
+		};
+		614A440A2436C4C70010AECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				614A440B2436C5050010AECD /* Visitor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		614A440D2436E63B0010AECD /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				614A440E2436E6610010AECD /* VisitorBusiness.swift */,
+				614A44102436E6740010AECD /* VisitorBusinessProtocol.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
 		617AAF5E2433FD5B00E37E48 = {
 			isa = PBXGroup;
 			children = (
 				617AAF692433FD5B00E37E48 /* Portaria */,
 				617AAF802433FD5E00E37E48 /* PortariaTests */,
 				617AAF682433FD5B00E37E48 /* Products */,
+				0F25A585B628F0D69DB1F318 /* Pods */,
+				107E33FF9AF75C65E7293423 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +180,14 @@
 		617AAF692433FD5B00E37E48 /* Portaria */ = {
 			isa = PBXGroup;
 			children = (
+				61B7E711243E8C1800428E16 /* Extensions */,
+				61B7E705243E320800428E16 /* Auth */,
+				613A40D0243D6FBA00397E1D /* PortariaView */,
+				613A40CD243CFE2200397E1D /* PortariaViewModel */,
+				614A440D2436E63B0010AECD /* Business */,
+				614A440A2436C4C70010AECD /* Model */,
 				617AAF6A2433FD5B00E37E48 /* AppDelegate.swift */,
 				617AAF6C2433FD5B00E37E48 /* SceneDelegate.swift */,
-				617AAF6E2433FD5B00E37E48 /* ViewController.swift */,
 				617AAF702433FD5B00E37E48 /* Main.storyboard */,
 				617AAF732433FD5E00E37E48 /* Assets.xcassets */,
 				617AAF752433FD5E00E37E48 /* LaunchScreen.storyboard */,
@@ -93,10 +199,28 @@
 		617AAF802433FD5E00E37E48 /* PortariaTests */ = {
 			isa = PBXGroup;
 			children = (
-				617AAF812433FD5E00E37E48 /* PortariaTests.swift */,
+				613A40C5243CB48800397E1D /* Business */,
 				617AAF832433FD5E00E37E48 /* Info.plist */,
 			);
 			path = PortariaTests;
+			sourceTree = "<group>";
+		};
+		61B7E705243E320800428E16 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				61B7E706243E322000428E16 /* AuthProtocol.swift */,
+				61B7E708243E323100428E16 /* Auth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		61B7E711243E8C1800428E16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				61B7E712243E8C4000428E16 /* DateExtension.swift */,
+				61B7E714243E8D9300428E16 /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 617AAF862433FD5E00E37E48 /* Build configuration list for PBXNativeTarget "Portaria" */;
 			buildPhases = (
+				DF8BDC775944040578FDAFB7 /* [CP] Check Pods Manifest.lock */,
 				617AAF632433FD5B00E37E48 /* Sources */,
 				617AAF642433FD5B00E37E48 /* Frameworks */,
 				617AAF652433FD5B00E37E48 /* Resources */,
+				82789DE8C051A5CF9286D1DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 617AAF892433FD5E00E37E48 /* Build configuration list for PBXNativeTarget "PortariaTests" */;
 			buildPhases = (
+				AC7EA8AEEEC8B2F0EF40E4ED /* [CP] Check Pods Manifest.lock */,
 				617AAF792433FD5E00E37E48 /* Sources */,
 				617AAF7A2433FD5E00E37E48 /* Frameworks */,
 				617AAF7B2433FD5E00E37E48 /* Resources */,
@@ -195,13 +322,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82789DE8C051A5CF9286D1DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Portaria/Pods-Portaria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Portaria/Pods-Portaria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Portaria/Pods-Portaria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC7EA8AEEEC8B2F0EF40E4ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PortariaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF8BDC775944040578FDAFB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Portaria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		617AAF632433FD5B00E37E48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617AAF6F2433FD5B00E37E48 /* ViewController.swift in Sources */,
+				61B7E70D243E33B700428E16 /* LoginViewController.swift in Sources */,
+				61B7E713243E8C4000428E16 /* DateExtension.swift in Sources */,
+				61B7E715243E8D9300428E16 /* StringExtension.swift in Sources */,
+				614A44112436E6740010AECD /* VisitorBusinessProtocol.swift in Sources */,
+				61B7E707243E322000428E16 /* AuthProtocol.swift in Sources */,
+				613A40CF243CFF4D00397E1D /* VisitorViewModel.swift in Sources */,
+				6140DF18243E119B0046D95F /* AddVisitorViewController.swift in Sources */,
+				614A440C2436C5050010AECD /* Visitor.swift in Sources */,
 				617AAF6B2433FD5B00E37E48 /* AppDelegate.swift in Sources */,
+				61B7E70F243E7DF800428E16 /* FilterViewController.swift in Sources */,
+				61B7E709243E323100428E16 /* Auth.swift in Sources */,
+				61B7E704243E28BD00428E16 /* AddVisitorViewModel.swift in Sources */,
+				613A40D2243D723D00397E1D /* ListVisitorViewController.swift in Sources */,
+				614A440F2436E6610010AECD /* VisitorBusiness.swift in Sources */,
 				617AAF6D2433FD5B00E37E48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617AAF822433FD5E00E37E48 /* PortariaTests.swift in Sources */,
+				613A40CA243CB96F00397E1D /* VisitorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +563,7 @@
 		};
 		617AAF872433FD5E00E37E48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A814F512C9C0C15237EA948 /* Pods-Portaria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +582,7 @@
 		};
 		617AAF882433FD5E00E37E48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0175E9083B7E18DBCCFC69 /* Pods-Portaria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +601,7 @@
 		};
 		617AAF8A2433FD5E00E37E48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4F232C6A4EDAFFA3068A4B /* Pods-PortariaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +624,7 @@
 		};
 		617AAF8B2433FD5E00E37E48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43ACB0F9BFAA1F0A1973DF98 /* Pods-PortariaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
